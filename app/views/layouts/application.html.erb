@@ -2,14 +2,20 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Primesinadad</title>
+  <title>Prime Sinadad</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<ul class="nav nav-pills">
+  <li role="presentation"><%= link_to "Home",    '#' %></li>
+  <li role="presentation"><%= link_to "Buy",    '#' %></li>
+  <li role="presentation"><%= link_to "Contact",    '#' %></li>
+</ul>
+<div class="container-fluid">
+<%= image_tag("logo.png")%>
 <%= yield %>
-
+</div>
 </body>
 </html>
