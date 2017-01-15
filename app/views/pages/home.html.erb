@@ -1,7 +1,4 @@
-<div id = "container" style="background-color:black">
-    <p style="color:white;">DIY Garage-rock band from Montreal, Canada</p>
-    <p> Prime Sinadad is Vincent and Samuel.
-    <style>
+<style>
   .floating-box {
     display: inline-block;
     width: 33%;
@@ -13,8 +10,97 @@
     width: 300%;
     height: auto;
   }
-</style>
+  ul
+  {
+  list-style-type: none;
+  }
+  .videos{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    height: 1050px;
+  }
+  .stories{
+    float: left;
+    width: 40%;
+
+  }
+  .album_description{
+    width: 100%;
+    height: 290px;
+  }
+  </style>
+<div id = "container">
+    <p style="color:white;">DIY Garage-rock band from Montreal, Canada.</p>
+    <p> Prime Sinadad is Vincent and Samuel Gosselin.
 <div class="floating-box"><%= image_tag("bandpic.png", :class => "photo") %></div>
+<h1 style="color:white;"> Prime Sinadad's Album </h1>
+<section>
+  <div class="videos">
+    <ul>
+      <li><iframe width="420" height="345" src="https://www.youtube.com/embed/UDrxfO4UMG4"></iframe></li>
+      <li><iframe width="420" height="345" src="https://www.youtube.com/embed/cBH6_-OU3EE"></iframe></li>
+      <li><iframe width="420" height="345" src="https://www.youtube.com/embed/YZQatNu2oGI"></iframe></li>
+    </ul>
+  </div>
+  <div class="stories">
+    <ul style>
+      <h2 style="color:white;">Story</h2>
+      <li><div class ="album_description">
+          <p>3rd Album of Prime Sinadad, Recorded in Brownsburg-Chatham, Québec.
+             The recordings took place from December 17th to 23rd of 2016. The cottage was surrounded 
+             by forest.<br><br>
+             Songs on the album: <ul style="color:white;">
+                          <li>Tell Me</li>
+                          <li>Space Shrooms</li>
+                          <li>Prove You wrong</li>
+                          <li>In the room</li>
+                          <li>Born in a mansion</li>
+                          <li>Living in the woods</li>
+                          <li>Muppet Show</li>
+                        </ul>
+          </p>
+         </div>
+      </li>
+      <h2 style="color:white;">Story</h2>
+      <li><div class ="album_description">
+      <p>2nd Album of Prime Sinadad, Recorded in Gracefield, Québec.
+             The recordings took place from January 2nd to 9th 2016.
+             <br><br>
+             Songs on the album: <ul style="color:white;">
+                          <li>Mary</li>
+                          <li>Girl</li>
+                          <li>Man on the phone</li>
+                          <li>Chemicals</li>
+                          <li>Bad weather</li>
+                          <li>Love</li>
+                          <li>Mars Groove</li>
+                        </ul>
+          </p>
+        </div>
+      </li>
+      <h2 style="color:white;">Story</h2>
+      <li><div class ="album_description">
+      <p>1st Album of Prime Sinadad, Recorded in Eastman, Québec.
+             The recordings took place from January 3rd to 9th 2015.
+             <br><br>
+             Songs on the album: <ul style="color:white;">
+                          <li>Surfin'</li>
+                          <li>Daniel</li>
+                          <li>Jeune homme</li>
+                          <li>Floff</li>
+                          <li>Time is passing by</li>
+                          <li>Outro</li>
+                        </ul>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
+
+
 
     
 
