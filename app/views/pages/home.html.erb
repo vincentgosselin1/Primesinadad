@@ -10,6 +10,14 @@
     width: 300%;
     height: auto;
   }
+  .tshirt {
+    width: 100%;
+    height: auto;
+  }
+  .cd {
+    width: 100%;
+    height: 100%;
+  }
   ul
   {
   list-style-type: none;
@@ -35,15 +43,15 @@
   </style>
 <div id = "container">
     <p style="color:white;">DIY Garage-rock band from Montreal, Canada.</p>
-    <p> Prime Sinadad is Vincent and Samuel Gosselin.
+    <p> Prime Sinadad is Samuel Gosselin and Vincent Gosselin.
 <div class="floating-box"><%= image_tag("bandpic.png", :class => "photo") %></div>
 <h1 style="color:white;" id="albums"> Prime Sinadad's Albums </h1>
 <section>
   <div class="videos">
     <ul>
-      <li><iframe width="420" height="345" src="https://www.youtube.com/embed/UDrxfO4UMG4"></iframe></li>
-      <li><iframe width="420" height="345" src="https://www.youtube.com/embed/cBH6_-OU3EE"></iframe></li>
-      <li><iframe width="420" height="345" src="https://www.youtube.com/embed/YZQatNu2oGI"></iframe></li>
+      <li><iframe width="90%" height="345" src="https://www.youtube.com/embed/UDrxfO4UMG4"></iframe></li>
+      <li><iframe width="90%" height="345" src="https://www.youtube.com/embed/cBH6_-OU3EE"></iframe></li>
+      <li><iframe width="90%" height="345" src="https://www.youtube.com/embed/YZQatNu2oGI"></iframe></li>
     </ul>
   </div>
   <div class="stories">
@@ -102,3 +110,84 @@
   </div>
 </section>
 </div>
+<div id = "shop">
+  <div id = "t-shirts">
+  <div class="row">
+
+    <div class="col-md-6">
+      <row><p>T-SHIRT#1</p></row>
+      <row>
+      <div class="col-md-6">
+        <%= image_tag("muppetshow_back_tshirt.png", :class => "tshirt") %>
+      </div>
+      <div class="col-md-6">
+        <%= image_tag("muppetshow_front_tshirt.png", :class => "tshirt") %>
+      </div>
+    </row>
+    </div>
+
+    <div class="col-md-6">
+      <row><p>T-SHIRT#2</p></row>
+      <row>
+      <div class="col-md-6">
+        <%= image_tag("jimcarrey_back_tshirt.png", :class => "tshirt") %>
+      </div>
+      <div class="col-md-6">
+        <%= image_tag("jimcarrey_front_tshirt.png", :class => "tshirt") %>
+      </div>
+      </row>
+    </div>
+
+  </div>
+
+  <div id = "albums">
+  <row>
+   <div class="col-md-6">
+    <p>Unisex T-shirt 30$ <button type="button" class="btn btn-primary btn-lg">BUY</button></p>
+   </div>
+    <div class="col-md-6">
+      <p>Unisex T-shirt  30$ <button type="button" class="btn btn-primary btn-lg">BUY</button></p>
+   </div>
+  </row>
+</div>
+
+
+  </div>
+  <div id = "albums">
+    <div class="row">
+    <div class="col-md-4">
+      <row><%= image_tag("1st_album_cover.png", :class => "cd") %></row>
+      <row><p>CD : 5$</p></row>
+      <row><button type="button" class="btn btn-primary btn-lg">BUY</button></row>
+    </div>
+    <div class="col-md-4">
+      <row><%= image_tag("2nd_album_cover.png", :width => "100%", :height => "60%") %></row>
+      <row><p>CD : 5$</p></row>
+      <row><button type="button" class="btn btn-primary btn-lg">BUY</button></row>
+    </div>
+    <div class="col-md-4">
+      <row><%= image_tag("3rd_album_cover.png", :class => "cd") %></row>
+      <row><p>CD : 5$</p></row>
+      <row><button type="button" class="btn btn-primary btn-lg">BUY</button></row>
+    </div>
+    </div>
+  </div>
+</div>
+
+ <div class="jumbotron">
+    <h1>BOOK NOW</h1>
+    <h1>Contact : primesinadad@gmail.com</h1>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+

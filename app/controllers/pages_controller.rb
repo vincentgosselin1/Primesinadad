@@ -4,8 +4,10 @@ class PagesController < ApplicationController
   end
 
   def music
+  	
   end
 
   def contact
+
   end
 end
