@@ -7,20 +7,7 @@ RSpec.describe PagesController, type: :controller do
       get :home
       expect(response).to have_http_status(:success)
     end
-  end
 
-  describe "GET #music" do
-    it "returns http success" do
-      get :music
-      expect(response).to have_http_status(:success)
-    end
   end
-
-  describe "GET #contact" do
-    it "returns http success" do
-      get :contact
-      expect(response).to have_http_status(:success)
-    end
-  end
-
+  
 end

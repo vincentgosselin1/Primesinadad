@@ -1,193 +1,201 @@
-<style>
-  .floating-box {
-    display: inline-block;
-    width: 33%;
-    height: 20%;
-    color: white;
-    text-align: center;
-  }
-  .photo {
-    width: 300%;
-    height: auto;
-  }
-  .tshirt {
-    width: 100%;
-    height: auto;
-  }
-  .cd {
-    width: 100%;
-    height: 100%;
-  }
-  ul
-  {
-  list-style-type: none;
-  }
-  .videos{
-    float: left;
-    width: 40%;
-    margin-left: 2%;
-    height: 1050px;
-  }
-  .stories{
-    float: left;
-    width: 40%;
-  }
-  .album_description{
-    width: 100%;
-    height: 290px;
-  }
-  #albums{
-    font-family:'Black Ops One', cursive;
-    font-size:50px;
-  }
-  </style>
-<div id = "container">
-    <p style="color:white;">DIY Garage-rock band from Montreal, Canada.</p>
-    <p> Prime Sinadad is Samuel Gosselin and Vincent Gosselin.
-<div class="floating-box"><%= image_tag("bandpic.png", :class => "photo") %></div>
-<h1 style="color:white;" id="albums"> Prime Sinadad's Albums </h1>
-<section>
-  <div class="videos">
-    <ul>
-      <li><iframe width="90%" height="345" src="https://www.youtube.com/embed/UDrxfO4UMG4"></iframe></li>
-      <li><iframe width="90%" height="345" src="https://www.youtube.com/embed/cBH6_-OU3EE"></iframe></li>
-      <li><iframe width="90%" height="345" src="https://www.youtube.com/embed/YZQatNu2oGI"></iframe></li>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-transparent fixed-top">
+  <a class="navbar-brand" href="/">Prime Sinadad</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#listen">Listen Now!</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#tshirts">Tshirts</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#albums">Albums</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#booking">Booking</a>
+      </li>
     </ul>
   </div>
-  <div class="stories">
-    <ul style>
-      <h2 style="color:white;">Story</h2>
-      <li><div class ="album_description">
-          <p>3rd Album of Prime Sinadad, Recorded in Brownsburg-Chatham, Québec.
-             The recordings took place from December 17th to 23rd of 2016. The cottage was surrounded 
-             by forest.<br><br>
-             Songs on the album: <ul style="color:white;">
-                          <li>Tell Me</li>
-                          <li>Space Shrooms</li>
-                          <li>Prove You wrong</li>
-                          <li>In the room</li>
-                          <li>Born in a mansion</li>
-                          <li>Living in the woods</li>
-                          <li>Muppet Show</li>
-                        </ul>
-          </p>
+</nav>
+<!-- /.navigation -->
+
+<!-- Carousel -->
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>First Slide</h3>
+          <p>This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Second Slide</h3>
+          <p>This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Third Slide</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span></a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span></a>
+  </div>
+</header>
+<!-- /.carousel -->
+
+<!-- Page Content -->
+<div class="container">
+  <div class="panel">
+    <div class="panel-body">
+      <h1>DIY Garage-rock band from Montreal, Canada</h1>
+    </div>
+    <div class="panel-footer">
+      <h2>Prime Sinadad is Samuel Gosselin and Vincent Gosselin</h2>
+    </div>
+  </div>
+
+  <div id="listen" class="panel">
+    <div class="panel-header"><h3>Listen Now!</h3></div>
+    <div class="panel-body">
+      <div class="card">
+        <div class="card-header">The Muppet Show</div>
+        <div class="card-body">
+          <iframe src="https://www.youtube.com/embed/UDrxfO4UMG4"></iframe>
+        </div>
+        <div class="card-footer">
+            <p>3rd Album of Prime Sinadad, Recorded in Brownsburg-Chatham, Québec. The recordings took place from December 17th to 23rd of 2016. The cottage was surrounded by forest.</p>
+            <p>Songs on the album:</p>
+            <ul>
+              <li>Tell Me</li>
+              <li>Space Shrooms</li>
+              <li>Prove You wrong</li>
+              <li>In the room</li>
+              <li>Born in a mansion</li>
+              <li>Living in the woods</li>
+              <li>Muppet Show</li>
+            </ul>
          </div>
-      </li>
-      <h2 style="color:white;">Story</h2>
-      <li><div class ="album_description">
-      <p>2nd Album of Prime Sinadad, Recorded in Gracefield, Québec.
-             The recordings took place from January 2nd to 9th 2016.
-             <br><br>
-             Songs on the album: <ul style="color:white;">
-                          <li>Mary</li>
-                          <li>Girl</li>
-                          <li>Man on the phone</li>
-                          <li>Chemicals</li>
-                          <li>Bad weather</li>
-                          <li>Love</li>
-                          <li>Mars Groove</li>
-                        </ul>
-          </p>
+      </div>
+      <div class="card">
+        <div class="card-header">Jim Carrey [EP]</div>
+        <div class="card-body">
+          <iframe src="https://www.youtube.com/embed/cBH6_-OU3EE"></iframe>
         </div>
-      </li>
-      <h2 style="color:white;">Story</h2>
-      <li><div class ="album_description">
-      <p>1st Album of Prime Sinadad, Recorded in Eastman, Québec.
-             The recordings took place from January 3rd to 9th 2015.
-             <br><br>
-             Songs on the album: <ul style="color:white;">
-                          <li>Surfin'</li>
-                          <li>Daniel</li>
-                          <li>Jeune homme</li>
-                          <li>Floff</li>
-                          <li>Time is passing by</li>
-                          <li>Outro</li>
-                        </ul>
-          </p>
+        <div class="card-footer">
+          <p>2nd Album of Prime Sinadad, Recorded in Gracefield, Québec. The recordings took place from January 2nd to 9th 2016.</p>
+          <p>Songs on the album:</p>
+          <ul>
+            <li>Mary</li>
+            <li>Girl</li>
+            <li>Man on the phone</li>
+            <li>Chemicals</li>
+            <li>Bad weather</li>
+            <li>Love</li>
+            <li>Mars Groove</li>
+          </ul>
         </div>
-      </li>
-    </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Dreamy Boys [EP]</div>
+        <div class="card-body">
+          <iframe src="https://www.youtube.com/embed/YZQatNu2oGI"></iframe>
+        </div>
+        <div class="card-footer">
+          <p>1st Album of Prime Sinadad, Recorded in Eastman, Québec. The recordings took place from January 3rd to 9th 2015.</p>
+          <p>Songs on the album:</p>
+          <ul>
+            <li>Surfin'</li>
+            <li>Daniel</li>
+            <li>Jeune homme</li>
+            <li>Floff</li>
+            <li>Time is passing by</li>
+            <li>Outro</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer"><a href="#">Shop Now !</a></div>
   </div>
-</section>
+  <!-- /.portfolio albums -->
+
+  <!-- Merchandise Section -->
+  <h2>Merchandise</h2>
+  <div id="tshirts" class="panel">
+    <div class="panel-header"><h3>Tshirts</h3></div>
+    <div class="panel-body">
+      <div class="card">
+        <div class="card-body"><%= image_tag "muppetshow_front_tshirt.png", :class => "card-img-top", :alt => "Muppetshow tshirt front" %></div>
+        <div class="card-footer">Muppetshow tshirt front</div>
+      </div>
+      <div class="card">
+        <div class="card-body"><%= image_tag "muppetshow_back_tshirt.png", :class => "card-img-top", :alt => "Muppetshow tshirt back" %></div>
+        <div class="card-footer">Muppetshow tshirt back</div>
+      </div>
+      <div class="card">
+        <div class="card-body"><%= image_tag "jimcarrey_front_tshirt.png", :class => "card-img-top", :alt => "Jim Carrey tshirt front" %></div>
+        <div class="card-footer">Jim Carrey tshirt front</div>
+      </div>
+      <div class="card">
+        <div class="card-body"><%= image_tag "jimcarrey_back_tshirt.png", :class => "card-img-top", :alt => "Jim Carrey tshirt back" %></div>
+        <div class="card-footer">Jim Carrey tshirt back</div>
+      </div>
+    </div>
+    <div class="panel-footer"><a href="#">Shop Now !</a></div>
+  </div>
+  <!-- /.panel -->
+
+  <div id="albums" class="panel">
+    <div class="panel-header"><h3>Albums</h3></div>
+    <div class="panel-body">
+      <div class="card">
+        <div class="card-body"><%= image_tag "3rd_album_cover.png", :class => "card-img-top", :alt => "Muppetshow album cover" %></div>
+        <div class="card-footer">The Muppetshow</div>
+      </div>
+      <div class="card">
+        <div class="card-body"><%= image_tag "2nd_album_cover.png", :class => "card-img-top", :alt => "Jim Carrey [EP] album cover" %></div>
+        <div class="card-footer">Jim Carrey [EP]</div>
+      </div>
+      <div class="card">
+        <div class="card-body"><%= image_tag "1st_album_cover.png", :class => "card-img-top", :alt => "Dreamy Boys [EP] album cover" %></div>
+        <div class="card-footer">Dreamy Boys [EP]</div>
+      </div>
+    </div>
+    <div class="panel-footer"><a href="#">Shop Now !</a></div>
+  </div>
+  <!-- /.panel -->
+
+  <div id="booking" class="panel">
+    <div class="panel-header">
+      <h3>BOOK NOW</h3>
+    </div>
+    <div class="panel-body">
+      <a href="mailto:primesinadad@gmail.com?Subject=Booking">Contact : primesinadad@gmail.com</a>
+    </div>
+    <div class="panel-footer">
+      <%= image_tag "logo", :class => "card-img-top", :alt => "Muppetshow album cover" %>
+    </div>
+  </div>
+  <!-- /.panel -->
 </div>
-<div id = "shop">
-  <div id = "t-shirts">
-  <div class="row">
-
-    <div class="col-md-6">
-      <row><p>T-SHIRT#1</p></row>
-      <row>
-      <div class="col-md-6">
-        <%= image_tag("muppetshow_back_tshirt.png", :class => "tshirt") %>
-      </div>
-      <div class="col-md-6">
-        <%= image_tag("muppetshow_front_tshirt.png", :class => "tshirt") %>
-      </div>
-    </row>
-    </div>
-
-    <div class="col-md-6">
-      <row><p>T-SHIRT#2</p></row>
-      <row>
-      <div class="col-md-6">
-        <%= image_tag("jimcarrey_back_tshirt.png", :class => "tshirt") %>
-      </div>
-      <div class="col-md-6">
-        <%= image_tag("jimcarrey_front_tshirt.png", :class => "tshirt") %>
-      </div>
-      </row>
-    </div>
-
-  </div>
-
-  <div id = "albums">
-  <row>
-   <div class="col-md-6">
-    <p>Unisex T-shirt 30$ <button type="button" class="btn btn-primary btn-lg">BUY</button></p>
-   </div>
-    <div class="col-md-6">
-      <p>Unisex T-shirt  30$ <button type="button" class="btn btn-primary btn-lg">BUY</button></p>
-   </div>
-  </row>
-</div>
-
-
-  </div>
-  <div id = "albums">
-    <div class="row">
-    <div class="col-md-4">
-      <row><%= image_tag("1st_album_cover.png", :class => "cd") %></row>
-      <row><p>CD : 5$</p></row>
-      <row><button type="button" class="btn btn-primary btn-lg">BUY</button></row>
-    </div>
-    <div class="col-md-4">
-      <row><%= image_tag("2nd_album_cover.png", :width => "100%", :height => "60%") %></row>
-      <row><p>CD : 5$</p></row>
-      <row><button type="button" class="btn btn-primary btn-lg">BUY</button></row>
-    </div>
-    <div class="col-md-4">
-      <row><%= image_tag("3rd_album_cover.png", :class => "cd") %></row>
-      <row><p>CD : 5$</p></row>
-      <row><button type="button" class="btn btn-primary btn-lg">BUY</button></row>
-    </div>
-    </div>
-  </div>
-</div>
-
- <div class="jumbotron">
-    <h1>BOOK NOW</h1>
-    <h1>Contact : primesinadad@gmail.com</h1>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- /.container -->
