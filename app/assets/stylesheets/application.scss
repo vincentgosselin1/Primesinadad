@@ -15,9 +15,8 @@
  */
 /* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"*/
 @import "bootstrap-sprockets";
-//@import "bootstrap";
-@import "bootstrap/css/bootstrap.min.css";
-@import "bootstrap/css/bootstrap-grid.min.css";
-@import "bootstrap/css/bootstrap-reboot.min.css";
+@import "bootstrap.min.css";
+@import "bootstrap-grid.min.css";
+@import "bootstrap-reboot.min.css";
 @import "modern-business.css";
 @import "pages.css";

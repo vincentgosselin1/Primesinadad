@@ -2,93 +2,136 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$color-card:          #333;
+$text-color:          #fff;
+$panel-text-color:    #ccc;
+
+$color-header:        rgba(0, 0, 0, 0.85);
+$color-container:     rgba(50,50,50,0.98);
+$color-panel:         rgba(0, 0, 0, 0.35);
+$color-panel-footer:  rgba(0, 0, 0, 0.9);
+
+$panel-header-padding:1rem 1.25rem;
+$panel-padding:       0.5rem 1.25rem 2rem 1.25rem;
+$image-height:        250px;
+$video-size:          200px;
+
 body {
   background-image: url("garage_background");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #fff;
+  color: $text-color;
+
+  header {
+    background-color: $color-header;
+  }
+
+  .navbar,
+  a.navbar-brand,
+  a.nav-link {
+      text-decoration: none;
+      color: $text-color;
+  }
+
+  .navbar-transparent {
+    background-color: $color-header;
+  }
 
   .container {
     padding: 10px;
-    background-color: #333;
+    background-color: $color-container;
+
+    .top-panel {
+      display: block;
+      text-align: center;
+      padding: $panel-header-padding;
+    }
 
     h1, h2, h3, h4 {
       margin-left: 20px;
+      text-align: center;
     }
 
     #listen .card-body {
-      background-color: #000;
+      height: $video-size;
+      max-height: $video-size;
     }
 
     #listen iframe {
       height: 100%;
       width: 100%;
-      max-width: 250px;
     }
   }
-}
 
-.navbar {
-  color: #fff;
-  text-decoration: none;
+  .photo {
 
-  a.navbar-brand,
-  a.nav-link {
-      text-decoration: none;
-      color: #fff;
   }
-}
-
-.navbar-transparent {
-  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .panel {
-  background-color: rgba(0, 0, 0, 0.35);
-  color: #ccc;
+  background-color: $color-panel;
+  color: $panel-text-color;
   margin-bottom: 30px;
 
   .panel-header {
-    padding: 0.75rem 1.25rem 0 1.25rem;
+    padding: $panel-header-padding;
     margin-bottom: 0;
 
     h3 {
       margin: 0;
     }
   }
+
   .panel-body {
     display: flex;
     justify-content: space-between;
-    padding: 1.25rem;
+    padding: $panel-padding;
+  }
 
-    .card {
-      flex-flow: column wrap;
-      border: 1px solid #222;
-      margin: 0 5px;
-      border-radius: 0;
+  .panel-footer {
+    padding: $panel-header-padding;
+    background-color: $color-panel-footer;
+    text-align: center;
+  }
+}
 
-      .card-body {
-        padding: 5px;
-      }
+.card {
+  flex-flow: column wrap;
+  border: 1px solid #222;
+  margin: 0 5px;
+  border-radius: 0;
+  max-width: 400px;
+  background-color: $color-card;
 
-      .card-header,
-      .card-footer {
-        background-color: #333!important;
-        border: 0;
-        text-align: center;
-        border-radius: 0;
+  .card-header {
+    background-color: $color-card;
+    border: 0;
+    text-align: center;
+    border-radius: 0;
+    height: 50px;
+    width: 100%;
+  }
 
-        a {
-          text-decoration: none;
-          color: #fff!important;
-        }
-      }
+  .card-body {
+    padding: 5px;
+
+    .card-img-top {
+      height: $image-height;
+      max-height: $image-height;
     }
   }
-  .panel-footer {
-    padding: 0.75rem 1.25rem;
-    background-color: rgba(0, 0, 0, 0.9);
+
+  .card-footer {
+    background-color: $color-card;
+    border: 0;
     text-align: center;
+    border-radius: 0;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: $text-color!important;
+    }
   }
 }
 
