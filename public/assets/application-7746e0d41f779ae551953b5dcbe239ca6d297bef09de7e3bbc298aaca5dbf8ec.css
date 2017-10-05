@@ -1,0 +1,152 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+/* line 5, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+body {
+  background-image: url("garage_background");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+/* line 11, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+body .container {
+  padding: 10px;
+  background-color: #333;
+}
+/* line 15, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+body .container h1, body .container h2, body .container h3, body .container h4 {
+  margin-left: 20px;
+}
+/* line 19, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+body .container #listen .card-body {
+  background-color: #000;
+}
+/* line 23, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+body .container #listen iframe {
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* line 31, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.navbar {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 35, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.navbar a.navbar-brand,
+.navbar a.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 42, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 46, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #ccc;
+  margin-bottom: 30px;
+}
+/* line 51, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-header {
+  padding: 0.75rem 1.25rem 0 1.25rem;
+  margin-bottom: 0;
+}
+/* line 55, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-header h3 {
+  margin: 0;
+}
+/* line 59, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+/* line 64, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-body .card {
+  flex-flow: column wrap;
+  border: 1px solid #222;
+  margin: 0 5px;
+  border-radius: 0;
+}
+/* line 70, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-body .card .card-body {
+  padding: 5px;
+}
+/* line 74, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-body .card .card-header,
+.panel .panel-body .card .card-footer {
+  background-color: #333 !important;
+  border: 0;
+  text-align: center;
+  border-radius: 0;
+}
+/* line 81, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-body .card .card-header a,
+.panel .panel-body .card .card-footer a {
+  text-decoration: none;
+  color: #fff !important;
+}
+/* line 88, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.panel .panel-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+/* line 95, /Users/vincentgosselin/Desktop/rails_projects/primesinadad/app/assets/stylesheets/pages.scss */
+.albums {
+  font-family: 'Black Ops One', cursive;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"*/
+@import url(bootstrap/css/bootstrap.min.css);
+@import url(bootstrap/css/bootstrap-grid.min.css);
+@import url(bootstrap/css/bootstrap-reboot.min.css);
+@import url(modern-business.css);
+@import url(pages.css);
